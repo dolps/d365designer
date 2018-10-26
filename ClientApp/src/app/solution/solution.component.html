@@ -1,14 +1,92 @@
-<h1>Hovedkort</h1>
+<div class="row">
+    <div class="col">
+            <h1>Hovedkort</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+
+        </div>
+                  <div class="col-md-2">
+                   Some
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-md-2">
+                            Thing
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-md-2">
+                            Else
+                    </div><!-- /.col-lg-6 -->
+</div>
+<hr>
 <div class="container">
+    <!--
+    <div class="row">
+        <div *ngFor="let section of sections" class="col-md-4">
+            <div class="row">
+                    <p><strong>{{section.name}}</strong></p>
+            </div>
+            <div *ngFor="let row of section.rows" class="row">
+                <div *ngFor="let column of row.columns" class="col-md-3">
+                    <p>{{column.name}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+        <div *ngFor="let tab of tabs" class="col-md-4">
+            <div class="row">
+                <h3>{{tab.name}}</h3>
+            </div>
+            <div *ngFor="let section of tab.sections" class="row">
+                <div class="row">
+                    <p><strong>{{section.name}}</strong></p>
+                </div>
+                <div *ngFor="let row of section.rows" class="row">
+                    <div *ngFor="let column of row.columns" class="col-md-4">
+                        <p>{{column.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<br><br><br><br><br>
+<!--
     <div class="row">
         <div class="col col-md-4">
-                <p class="font-weight-bold">Bold text.</p>
-                <p class="font-weight-normal">Normal weight text.</p>
-                <p class="font-weight-light">Light weight text.</p>
-                <p class="font-italic">Italic text.</p>
-                <strong>test</strong>
+            <div class="row">
+                <p><strong>Kontaktinformasjon</strong></p>        
+            </div>        
+            <p>Org nr</p>
+            <p>Firmanavn</p>
+            <div class="row">
+                    <div class="col-md-4"><p>Åpent fra</p></div>
+                    <div class="col-md-4"><p>Åpent til</p></div>
+                </div>
+            <p><strong>Postadresse</strong></p>
+            <p>Gatenavn</p>
+            <p>Postnr</p>
+            <p><strong>Tilhørighet</strong></p>
+            <p>Kontor</p>
         </div>
-        <div class="col col-md-4"><div>hå</div></div>
-        <div class="col col-md-4"><div>lol</div></div>
+        <div class="col col-md-4">
+                <p><strong>Salgsinformasjon</strong></p>
+                <p>inntekt</p>
+                <p>utgift</p>
+                <p><strong>Postadresse</strong></p>
+                <p>Gatenavn</p>
+                <p>Postnr</p>
+                <p><strong>Tilhørighet</strong></p>
+                <p>Kontor</p>
+            </div>
+            <div class="col col-md-4">
+                    <p><strong>Kontaktinformasjon</strong></p>
+                    <p>Org nr</p>
+                    <p>Firmanavn</p>
+                    <p><strong>Postadresse</strong></p>
+                    <p>Gatenavn</p>
+                    <p>Postnr</p>
+                    <p><strong>Tilhørighet</strong></p>
+                    <p>Kontor</p>
+                </div>
     </div>
+-->
 </div>
