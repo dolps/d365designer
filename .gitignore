@@ -5,7 +5,7 @@
 
 # VS ide stuff
 *.vscode
-d365-designer.csproj
+d365-designer.csproj 
 
 # User-specific files
 *.suo
