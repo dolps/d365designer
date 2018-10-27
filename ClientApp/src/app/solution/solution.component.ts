@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'solution',
   templateUrl: './solution.component.html',
+  styleUrls:['solution.component.css']
 })
 export class SolutionComponent implements OnInit {
     tabs: Tab[];
@@ -26,6 +27,10 @@ export class SolutionComponent implements OnInit {
 
         this.tabs.push(tab1);
         this.tabs.push(tab2);
+    }
+
+    onSectionClick(section){
+        console.log(JSON.stringify(section));
     }
 
     private makeTab1Section(): Section{
