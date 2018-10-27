@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { NgbActiveModal, NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
+import { Section } from '../shared/model/section.model';
+import { Row } from '../shared/model/row.model';
+
 @Component({
   selector: 'solution',
   templateUrl: './solution.component.html',
@@ -103,14 +107,4 @@ interface Card{
 interface Tab{
     name: string;
     sections: Section[];
-}
-interface Section{
-    name: string;
-    rows: Row[];
-}
-interface Row{
-    columns: Column[];
-}
-interface Column{
-    name: string;
 }
